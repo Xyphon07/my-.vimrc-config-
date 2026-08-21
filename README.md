@@ -1,1 +1,1 @@
-# my-.vimrc-config-
+# my .vimrc config
