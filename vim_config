@@ -1,0 +1,19 @@
+:set relativenumber
+:set number
+:set number relativenumber
+colorscheme elflord
+syntax on
+set smartindent
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+filetype plugin indent on
+noremap <F5> :w<CR>:!python % && ./ <CR>
+noremap <F6> :w<CR>:!gcc % -o %< && ./ %< <CR>
+packadd comment
+nnoremap U <C-r>
+" Run cargo run in a bottom terminal split panel
+autocmd FileType rust nnoremap <F7> :w<CR>:tab terminal cargo run<CR>
+
+
